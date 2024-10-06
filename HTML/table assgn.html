@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            caption{
+            margin: 10px;
+            text-size-adjust: 20px;
+        }
+        table,th,tr,td{
+            border-spacing:1px;
+            border: 3px solid black;
+            margin: auto;
+        }
+        th,tr,td{
+            padding: 10px;
+        }
+        tr,td{
+            text-align: left;
+        }
+        th{
+            text-align: center;
+        }
+        }
+        div1{
+            caption{
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }
+            table{
+                margin:auto;
+                border: 3px solid gray;
+            }
+            tr,td{
+                padding: 10px;
+            }
+           table tr#ROW1{
+            background-color: red;
+           }
+           table td#CELL3{
+            background-color: silver;
+           } 
+           table tr#ROW2{
+            background-color: gold;
+           }
+        }
+        div2{
+            table{
+                margin:auto;
+                border-top: 3px  dashed brown;
+            }
+            caption{
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }
+            table, tr, td{
+                border: 1px dashed brown;
+                border-collapse:collapse;
+                padding: 20px;
+            }
+            table{
+                border-radius: 50px solid brown;
+            }
+        }
+        div3{
+            table{
+                margin:auto;
+            }
+            table,tr,th,td{
+                border-spacing: 10px;
+            }
+            caption{
+                margin-top: 30px;
+                border: 1px solid black;
+                padding-top:2px;
+                padding-bottom: 2px;
+            }
+            th.H1{
+                border: 1px solid black;
+            }
+            th.H2{
+                border: 1px solid black;
+            }
+            th.H3{
+                border: 1px solid black;
+            }
+            td.D1{
+                border: 1px solid black;
+                padding: 30px;
+            }
+            td.D2{
+                border: 1px solid black;
+            }
+            td.D3{
+                border: 1px solid black;
+            }
+            td.D21{
+                border: 1px solid black;
+                padding: 30px;
+            }
+            td.D22{
+                border: 1px solid black;
+            }
+            td.D23{
+                border: 1px solid black;
+            }
+            td.D31{
+                border: 1px solid black;
+                text-align: center;
+            }
+        }
+        div4{
+            table{
+                margin: auto;
+            }
+            table,tr,th,td{
+                border: 1px solid black;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <caption><b>CSC503 timetable</b></caption>
+            <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <th>6-7pm</th>
+                <td>look at website</td>
+                <td>free</td>
+                <td>implementaton</td>
+                <td>free</td>
+                <td>free</td>
+            </tr>
+            <tr>
+                <th>7-8pm</th>
+                <td>take some notes</td>
+                <td>free</td>
+                <td>implementaton</td>
+                <td>free</td>
+                <td>free</td>
+            </tr>
+        </table>
+    </div>
+    <div1>
+        <table>
+            <caption><b>Color table</b></caption>
+            <tr id="ROW1">
+                <td rowspan="2">Red cell</td>
+                <td id="CELL3">silver cell</td>
+            </tr> 
+            <tr id="ROW2">
+                <td>gold cell</td>
+            </tr>
+        </table>
+    </div1>
+    <div2>
+        <table>
+            <caption><b>A test table with mered cells</b></caption>
+            <tr id="ROW1">
+                <td rowspan="2"></td>
+                <td colspan="2">Average</td>
+                <td rowspan="2">Red eyes</td>
+            </tr>
+            <tr id="ROW2">
+                <td>heght</td>
+                <td>weight</td>
+            </tr>
+            <tr id="ROW3">
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr id="ROW4">
+                <td>Females</td>
+                <td>1.7</td>
+                <td>0.02</td>
+                <td>43%</td>
+            </tr>
+        </table>
+    </div2>
+    <div3>
+        <table>
+            <caption class="CAP">Books about Computing</caption>
+            <tr>
+                <th class="H1">Title</th>
+                <th Class="H2">Publisher</th>
+                <th Class="H3">Author</th>
+            </tr>
+            <tr>
+                <td class="D1">IBM PC 
+                    Assembly 
+                    Language and 
+                    Programming</td>
+                <td class="D2">Pretice-Hall</td>
+                <td class="D3">Abel,P</td>
+            </tr>
+            <tr>
+                <td class="D21">Object-Oriented
+                     Analysis and
+                     Design</td>
+                <td class="D22">Addison-Wesley</td>
+                <td class="D23">Booch-G</td>
+            </tr>
+            <tr>
+                <td class="D31"colspan="3">Demonstration of a Fixed Table</td>
+            </tr>
+        </table>
+    </div3>
+    <div4>
+        <table>
+            <caption>no caption</caption>
+            <tr>
+                <th>No.</th>
+                <th>Image.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Hobby</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a href="https://clipart-library.com/clipart/clip-funny-cartoon-for-children-24.htm"title="It takes you to a website!!"><iframe src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTziMoQPV0IpjPU-NhFsL0JJskW8z8dzmcgiA&s"height="100"alt="no image></iframe></a></td>
+                <td>James</td>
+                <td>Frosty</td>
+                <td>25</td>
+                <td><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aprilaire.com%2Fblog%2Fsummer-fun-life-see-swimming-one-best-activities-kids%2F&psig=AOvVaw1hSuhJxsba6Km7Go1YriLA&ust=1724680215116000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIi9ztCkkIgDFQAAAAAdAAAAABAE"target=seft title="it takes you swimming😁😁">Swimming</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><iframe src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQACm168sEHIo3nR9NjNzaDMRLELFMbHoUzdA&s"height="100"alt="no image"></iframe></td>
+                <td>James</td>
+                <td>Lartey</td>
+                <td>22</td>
+                <td><a href="https://www.google.com/imgres?q=rapping&imgurl=https%3A%2F%2Fark.ie%2Fcontent%2Fimages%2F_385x225_crop_center-center_80_none%2FRap_workshop.jpg&imgrefurl=https%3A%2F%2Fark.ie%2Fevents%2Fview%2Ffunky-raps-rhymes-workshop&docid=Qg6941QGN3udkM&tbnid=b9YdmJxtj0JgYM&vet=12ahUKEwjd27OMpZCIAxUgxDgGHZIgI6cQM3oECGsQAA..i&w=385&h=225&hcb=2&ved=2ahUKEwjd27OMpZCIAxUgxDgGHZIgI6cQM3oECGsQAA"target=self title="it takes you to rapping">Rapping</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8bFmoPGa3W-j9pevvfpmYazx1H5BWIsH2iw&s"><iframe src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8bFmoPGa3W-j9pevvfpmYazx1H5BWIsH2iw&s"height="100"alt="no image"></iframe></a></td>
+                <td>Anna</td>
+                <td>Bayo</td>
+                <td>23</td>
+                <td><a href="https://www.google.com/imgres?q=cooking&imgurl=https%3A%2F%2Fwww.njlifestylemag.com%2Fcontent%2Fimages%2Fsize%2Fw1304%2F2023%2F12%2FAdobeStock_267334945.jpeg&imgrefurl=https%3A%2F%2Fwww.njlifestylemag.com%2Fhealth%2Fcooking-for-longevity-a-recipe-for-a-healthier-life%2F&docid=R1_ocmbEqcNhKM&tbnid=2G0O0WNPz-Z7FM&vet=12ahUKEwj2pPfKpZCIAxWP-TgGHWIyEXEQM3oECBYQAA..i&w=1304&h=870&hcb=2&ved=2ahUKEwj2pPfKpZCIAxWP-TgGHWIyEXEQM3oECBYQAA"target=self title="it takes you to cook!!">Cooking</a></td>
+            </tr>
+        </table>
+    </div4>
+</body>
+</html>

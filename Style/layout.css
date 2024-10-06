@@ -1,0 +1,118 @@
+* {
+    margin:0;
+    padding:0;
+}
+#header{
+    float:left;
+    background-color:rgb(255, 255, 255);
+    width:100%;
+    height: 145px;
+    border-bottom:5px solid blue;
+    text-align:center;
+}
+body {
+    background: linear-gradient(90deg, rgb(121, 216, 121) 26%, rgba(138, 215, 99, 1) 47%, rgba(125, 231, 115, 1) 100%);
+    border-top:5px solid blue;
+    font-family:arial,tahoma,sans-serif,times new roman;
+    font-size: 13px;
+}
+
+#logo,#slogan,#language,#contactinfo{
+    margin: 20px auto 0 auto;
+    float:left;
+    margin: 20px;
+}
+#logo{
+
+}
+#slogan,#language{
+    margin-left:20px;
+}
+#language{
+    margin:30px 40px 0;
+}
+#contactinfo li{
+    float: left;
+    margin-right:10px;
+    list-style:none;
+    border-right:2px solid rgb(15, 8, 110);
+    padding:0 12px 0 12px;
+}
+#contactinfo li.no_border{
+    border-right:0px;
+}
+#contactinfo a{
+    color:rgb(6, 155, 18);
+    text-decoration:none;
+    font-weight:bold;
+}
+#contactinfo{
+    margin:30px 0 0 0;
+}
+#slogan a{
+    color: rgb(41, 150, 12);
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+#contactinfo span{
+    float:left;
+    margin-right:10px;
+    color:rgb(158, 10, 10);
+}
+#language a{
+    color:rgb(24, 119, 197);
+    text-decoration:none;
+    font-weight:bold;
+    background: url(../images/mm\ logo.webp)no-repeat;
+    padding:0 0 20px 25px;
+}
+
+
+#mainmenu{
+    width:100%;
+    background:rgba(241, 234, 200, 0.678);
+    height:50px;
+    float:left;
+    display:block;
+}
+#mainmenu ul{
+    width:960px;
+    margin:0px;
+    text-align:center;
+}
+#mainmenu li{
+    float:left;
+    list-style-type:none;
+    border-right: 2px solid #ddd;
+}
+#mainmenu a{
+    width:190px;
+    height:50px;
+    display:block;
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    line-height:3.5;
+}
+#mainmenu a:hover{
+    background: rgb(205, 252, 252);
+    color: rgb(8, 218, 8);
+}
+#mainmenu a.currentcolor{
+    background: rgba(205, 252, 252);
+}
+#mainmenu a.left{
+    border-left:1px solid #ddd;
+    width:180px;
+}
+#mainbody{
+    width:960px;
+    height:500px;
+    display:block;
+    margin:140px auto;
+    background:#ffffff;
+    border:1px solid #ddd;
+    box-shadow: 0 0 5px #ddd;
+}
+
